@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "outDir": "dist",
+    "module": "CommonJS",
+    "target": "ES2020",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": true,
+    "strictPropertyInitialization": true,
+    "allowJs": false,
+    "checkJs": false,
+    "downlevelIteration": true,
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "resolveJsonModule": true,
+  },
+  "include": [
+    "src/**/*"
+  ],
+}
