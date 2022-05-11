@@ -1,9 +1,9 @@
-// Reference to TypeScript definitions for IntelliSense in VSCode
-/// <reference path="../../rnode-grpc-gen/js/rnode-grpc-js.d.ts" />
-
 import { injectable } from '@deepkit/injector'
 import { singleStack } from '@deepkit/core'
 import { Logger } from '@deepkit/logger'
+
+import * as grpcLib from '@grpc/grpc-js'
+import { ec } from 'elliptic'
 
 // Generated files with rnode-grpc-js tool
 import protoSchema from '../../rnode-grpc-gen/js/pbjs_generated.json'
@@ -11,9 +11,10 @@ import protoSchema from '../../rnode-grpc-gen/js/pbjs_generated.json'
 import '../../rnode-grpc-gen/js/DeployServiceV1_pb'
 import '../../rnode-grpc-gen/js/ProposeServiceV1_pb'
 
-import * as grpcLib from '@grpc/grpc-js'
-import { ec } from 'elliptic'
+// RNode gRPC client
+import * as _ from "../../rnode-grpc-gen/js/rnode-grpc-js" // Generated TypeScript definitions
 import { rnodeDeploy, rnodePropose, signDeploy, verifyDeploy, rhoParToJson, Options } from '@tgrospic/rnode-grpc-js'
+
 import { AppConfig } from '../config/app-config'
 
 class RNodeConfig extends AppConfig.slice('rnodeHost') { }

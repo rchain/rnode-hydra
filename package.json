@@ -9,11 +9,10 @@
     "start:debug": "APP_FRAMEWORK_DEBUG=true npm start",
     "config": "ts-node src/index app:config",
     "build": "tsc",
-    "clean": "rimraf dist dist-module dist-types dist-docs",
-    "clean:all": "rimraf dist dist-module dist-types dist-docs node_modules",
+    "clean": "rimraf rnode-grpc-gen dist dist-module dist-types dist-docs",
+    "clean:all": "rimraf rnode-grpc-gen dist dist-module dist-types dist-docs node_modules",
     "ts-node": "ts-node",
-    "preinstall": "rnode-grpc --rnode-version v0.12.4",
-    "test": "npm test"
+    "postinstall": "rnode-grpc --rnode-version v0.12.4"
   },
   "author": "",
   "dependencies": {
