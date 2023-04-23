@@ -16,7 +16,7 @@
   },
   "author": "",
   "dependencies": {
-    "@deepkit/framework": "^1.0.1-alpha.60",
+    "@deepkit/framework": "^1.0.1-alpha.92",
     "@grpc/grpc-js": "^1.5.0",
     "@tgrospic/rnode-grpc-js": "^0.10.0",
     "amqplib": "^0.8.0",
