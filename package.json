@@ -17,7 +17,7 @@
   "author": "",
   "dependencies": {
     "@deepkit/framework": "^1.0.1-alpha.60",
-    "@grpc/grpc-js": "^1.5.0",
+    "@grpc/grpc-js": "^1.8.8",
     "@tgrospic/rnode-grpc-js": "^0.10.0",
     "amqplib": "^0.8.0",
     "elliptic": "^6.5.4"
